@@ -1,4 +1,4 @@
-
+// Table Creation
 function createRow(sort_initial, number) {
   const tr = document.createElement('tr');
   tr.setAttribute('id', sort_initial + number);
@@ -14,20 +14,17 @@ function createData(text_input) {
 function createTable(sort_name, sort_initial) {
   var div = document.createElement('div')
   div.setAttribute('id', sort_name);
-  var row = createRow(sort_initial, 1);
-  for (var i = 1; i < 10; i++) {
-    row = createRow(sort_initial, i);
-    for (var j = 0; j < 3; j++) {
-      var td = createData(sort_name + j);
-      td.setAttribute('style', 'padding:15px')
-      row.appendChild(td);
-    }
+  for (var i = 0; i < 20; i++) {
+    var row = createRow(sort_initial, i);
+    var td = createData(sort_name + i);
+    td.setAttribute('style', 'border:1px solid;padding:15px')
+    row.appendChild(td);
     div.appendChild(row);
   }
   return div;
 }
 
-function test() {
+function main() {
   var div = createTable('merge_sort_data', 'm');
   document.getElementById('merge_sort_col').appendChild(div);
   div = createTable('quick_sort_data', 'q');
