@@ -131,8 +131,10 @@ function insertionSort(input){
   for (var i = 0; i < input.length; i++) {
     var index = input[i];
     document.getElementById("insertion_sort_col").appendChild(createTableRow("insert", "i", input));
-    for (var j = i - 1; input[j] > index; j--) {
+    var j = i - 1;
+    while (j >= 0 && input[j] > index) {
       input[j + 1] = input[j];
+      j--;
     }
     input[j + 1] = index;
   }
