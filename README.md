@@ -1,8 +1,12 @@
 # CPSC_335_Project_3:_3-Sort_Race
 CPSC 335-02: Algorithm Engineering
+
 Project 3: 3-Sort Race
+
 Team Name: G
+
 Members: Graciela Orozco
+
 
 Intro:
 A program that displays each step an algorithm takes to sort a given array. The three algorithms used are merge sort, quick sort, and insertion sort. 
