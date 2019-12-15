@@ -6,6 +6,8 @@ A program that displays each step an algorithm takes to sort a given array. The 
 
 Files:
 
-index.html: Use this to run the website and click the button to run the JavaScript program.
+index.html
+  - Use this to run the website and click the button to run the JavaScript program.
 
-app.js: This is the file that contains the algorithms and the necessary functions to dynamically create content onto the website from user activity through a button. 
+app.js
+  - This is the file that contains the algorithms and the necessary functions to dynamically create content onto the website from user activity through a button. 
